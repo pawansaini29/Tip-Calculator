@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Tip Calculator App</title>
+    <meta name="title" content="Tip Calculator App" />
+    <meta name="description" content="Calculate all your shopping tips for free, just enter the amount and we will do the rest " />
+</head>
+
+<body>
+    <h1>Tip calculator</h1>
+    <main class="container">
+        <div class="calculator">
+            <div style="position: relative">
+                <label for="bill">Bill</label>
+                <input type="number" name="" id="bill" class="standard billInput" min="1" placeholder="0" required />
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" id="IconChangeColor" height="21" width="21" class="icon"><path d="M.0022 64C.0022 46.33 14.33 32 32 32H288C305.7 32 320 46.33 320 64C320 81.67 305.7 96 288 96H231.8C241.4 110.4 248.5 126.6 252.4 144H288C305.7 144 320 158.3 320 176C320 193.7 305.7 208 288 208H252.4C239.2 266.3 190.5 311.2 130.3 318.9L274.6 421.1C288.1 432.2 292.3 452.2 282 466.6C271.8 480.1 251.8 484.3 237.4 474L13.4 314C2.083 305.1-2.716 291.5 1.529 278.2C5.774 264.1 18.09 256 32 256H112C144.8 256 173 236.3 185.3 208H32C14.33 208 .0022 193.7 .0022 176C.0022 158.3 14.33 144 32 144H185.3C173 115.7 144.8 96 112 96H32C14.33 96 .0022 81.67 .0022 64V64z" id="mainIconPathAttribute" fill="#737373" filter="url(#shadow)" stroke-width="0" stroke="#ff0000"></path><filter id="shadow"><feDropShadow id="shadowValue" stdDeviation="0.3" dx="0" dy="0" flood-color="black"></feDropShadow></filter></svg>
+
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg> -->
+
+            </div>
+            <div class="options">
+                <button class="btn" data-percent="5">5%</button>
+                <button class="btn" data-percent="10">10%</button>
+                <button class="btn" data-percent="15">15%</button>
+                <button class="btn" data-percent="25">25%</button>
+                <button class="btn" data-percent="50">50%</button>
+                <input type="number" name="" placeholder="Custom" class="custom" />
+            </div>
+            <div>
+                <label for="people">Number of People </label>
+                <input type="number" name="" id="people" class="standard" min="1" required placeholder="1" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="8.5" cy="7" r="4"></circle>
+            <line x1="20" y1="8" x2="20" y2="14"></line>
+            <line x1="23" y1="11" x2="17" y2="11"></line>
+          </svg>
+            </div>
+        </div>
+        <div class="results-container">
+            <div class="results-item">
+                <div>
+                    <p>Tip Amount</p>
+                    <small>/ Person</small>
+                </div>
+                <span id="tip">0.00</span>
+            </div>
+            <div class="results-item">
+                <div>
+                    <p>Total</p>
+                    <small>/ Person</small>
+                </div>
+                <span id="total">0.00</span>
+            </div>
+            <button class="reset">Reset</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
