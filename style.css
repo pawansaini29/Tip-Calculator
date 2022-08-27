@@ -6,8 +6,9 @@
 }
 
 :root {
-    --strong-cyan: hsl(172, 67%, 45%);
-    --very-dark-cyan: hsl(183, 100%, 15%);
+    /* --strong-cyan: hsl(172, 67%, 45%); */
+    --strong-cyan: #4CA1AF;
+    --very-dark-cyan: #215961;
     --dark-grayish-cyan: hsl(186, 14%, 43%);
     --grayish-cyan: hsl(184, 14%, 56%);
     --light-grayish-cyan: hsl(185, 41%, 84%);
@@ -18,7 +19,10 @@
 
 body {
     font-family: 'space mono', 'sans serif';
-    background: var(--light-grayish-cyan);
+    /* background: var(--light-grayish-cyan); */
+    background: #4CA1AF;
+    background: -webkit-linear-gradient(to left, #91c1c9, #4CA1AF);
+    background: linear-gradient(to left, #98c2c8, #4CA1AF);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -28,8 +32,8 @@ body {
 }
 
 h1 {
-    background: -webkit-linear-gradient(to right, var(--strong-cyan), #3c32cc);
-    background: linear-gradient(to right, var(--strong-cyan), #3c32cc);
+    background: -webkit-linear-gradient(to right, var(--strong-cyan), #2a2298);
+    background: linear-gradient(to left, var(--strong-cyan), #2c23a8);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -37,11 +41,11 @@ h1 {
 
 .container {
     background: var(--white);
-    padding: 2rem 1.5rem;
+    padding: 3rem 2rem;
     border-radius: 1rem;
     display: flex;
-    width: min(93%, 50rem);
-    gap: 1rem;
+    width: min(96%, 60rem);
+    gap: 2rem;
 }
 
 .calculator,
@@ -139,7 +143,7 @@ input[type='number']::-webkit-inner-spin-button {
     font-weight: 700;
     padding: 0.3rem 0.5rem;
     font-family: inherit;
-    border-radius: 0.2rem;
+    border-radius: 0.8rem;
     cursor: pointer;
     font-size: 1.3rem;
     outline: none;
@@ -163,7 +167,7 @@ button:focus {
 
 .results-container {
     background: var(--very-dark-cyan);
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     padding: 2rem 1rem 1rem;
     display: flex;
     flex-direction: column;
@@ -196,12 +200,13 @@ small {
     text-transform: uppercase;
     padding: 0.5rem 0.3rem;
     font-size: 1.1rem;
-    border-radius: 0.2rem;
+    border-radius: 1.8rem;
     outline: none;
     border: none;
     cursor: pointer;
-    background: var(--strong-cyan);
-    transition: 0.5s background-color, 0.5s color;
+    /* background: var(--strong-cyan); */
+    background: linear-gradient(to right, #add2d8, #4CA1AF);
+    transition: 0.7s background-color, 0.7s color;
     font-family: inherit;
     font-weight: 700;
 }
