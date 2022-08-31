@@ -50,7 +50,7 @@ const calculateTip = (numberOfPeople, percent, amount) => {
         const tipPerPerson = ((percent / 100) * amount).toFixed(2)
         const sumOfTip = (tipPerPerson * numberOfPeople).toFixed(2)
         tip.textContent = `${tipPerPerson}`
-        totalTip.textContent = `${sumOfTip}`
+        totalTip.textContent = (tipPerPerson / numberOfPeople).toFixed(2)
     }
     // CHECKING FOR INVALID INPUT VALUES OR NULL
 billInput.addEventListener('blur', (e) => {
